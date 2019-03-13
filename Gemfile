@@ -14,6 +14,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'materialize-sass', '~> 1.0'
 gem 'material_icons' 
+gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
 
 
 group :development, :test do
