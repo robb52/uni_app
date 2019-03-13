@@ -11,24 +11,51 @@
 
   <body>
 
-   <nav>
+    <header>
+     <nav>
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="#" class="brand-logo right">Tech U</a>
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
+              <li><a href="#">Courses</a></li>
+              <li><a href="#">Enrollments</a></li>
+              <li><a href="#">Account</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
       <div class="container">
-        <div class="nav-wrapper">
-          <a href="#" class="brand-logo right">Tech U</a>
-          <ul id="nav-mobile" class="left hide-on-med-and-down">
-            <li><a href="#">Courses</a></li>
-            <li><a href="#">Enrollments</a></li>
-            <li><a href="#">Account</a></li>
-          </ul>
+        <%= yield %>
+      </div>
+    </main>
+
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Tech U</h5>
+            <p class="grey-text text-lighten-4">Your Tech school!</p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Information</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!">Help</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">About</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Contact</a></li>
+            </ul>
+          </div>
         </div>
       </div>
-    </nav>
-
-    <div class="container">
-
-      <%= yield %>
-
-    </div>
+      <div class="footer-copyright">
+        <div class="container">
+        © 2019 Tech U
+        <a class="grey-text text-lighten-4 right" href="#!">About</a>
+        </div>
+      </div>
+    </footer>       
 
   </body>
 </html>
