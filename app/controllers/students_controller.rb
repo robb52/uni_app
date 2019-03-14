@@ -4,6 +4,10 @@ class StudentsController < ApplicationController
     @students = Student.all
   end
 
+  def show
+    @student = Student.find(params[:id])
+  end
+
   def new 
     @student = Student.new
   end
@@ -18,10 +22,15 @@ class StudentsController < ApplicationController
     end
   end
 
+
   private
 
   def student_params
     params.require(:student).permit(:name, :email)  
+  end
+
+  def find_student
+
   end
 
 end
