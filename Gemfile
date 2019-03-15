@@ -15,6 +15,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'materialize-sass', '~> 1.0'
 gem 'material_icons' 
 gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
+gem 'bcrypt', '~> 3.1', '>= 3.1.12'
 
 
 group :development, :test do
