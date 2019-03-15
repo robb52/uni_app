@@ -10,7 +10,7 @@ Rails.application.routes.draw do
 
   get 'login', to: 'logins#new'
 
-  post 'login', to: 'logind#create'
+  post 'login', to: 'logins#create'
 
   delete 'logout', to: 'logins#destroy'
 
